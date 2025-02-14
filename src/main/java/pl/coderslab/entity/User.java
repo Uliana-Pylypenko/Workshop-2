@@ -6,6 +6,18 @@ public class User {
     private String email;
     private String password;
 
+    public User() {
+        this.userName = "";
+        this.email = "";
+        this.password = "";
+    }
+
+    public User(String userName, String email, String password) {
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+    }
+
     public int setId(int id) {
         return this.id = id;
     }
